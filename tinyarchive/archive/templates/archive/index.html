@@ -1,39 +1,60 @@
-{% extends 'base.html' %}
-{% load static %}
-{% block content %}
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <title>
+        Archive
+    </title>
+</head>
+
 <div class="breadcrumb">
-    <a href="/"> Tiny Library  </a>
+    <a href="home.html"> Tiny Mug Library </a>
 </div>
 <div class="page_title">
-    The Archive
+    <h1>Archive</h1>
 </div>
 
-
 <div class="content">
-    {% if archive_items %}
-    <table>
+    <p>
+        The Tiny Mug Archive is a digital archive of a small number of Starbucks mugs. They are all from different locations, and some are from different series than others. 
+    </p>
+        <table>
         <thead>
             <th> Preview </th>
-            <th> Name </th>
+            <th> Location </th>
             <th> Description </th>
         </thead>
         <tbody>
-            {% for item in archive_items %}
             <tr>
-                {% if item.thumbnail %}
-                    <td><a href="{{item.id}}"><img src="{% get_media_prefix %}{{item.thumbnail}}"></td>
-                {% else %}
-                    <td></td>
-                {% endif %}
-                <td><a href="{{item.id}}">{{item.name}}</a></td>
-                <td>{{item.description}}</td>
+                <td><a href="boston1.html"><img src="bostonthumbnail.jpg" width="125" height="125"></a></td>
+                <td><a href="boston1.html">Boston</a></td>
+                <td>Starbucks mug from the Architecture series, made in 2006.</td>
             </tr>
-            {% endfor %}
+            <tr>
+                <td><a href="newmexico.html"><img src="nmfront.jpg" width="125" height="125"></a></td>
+                <td><a href="newmexico.html">New Mexico</a></td>
+                <td>Starbucks mug from the You Are Here series, made in 2015.</td>
+            </tr>
+            <tr>
+                <td><a href="sacramento.html"><img src="x.jpg" width="125" height="125"></a></td>
+                <td><a href="sacramento.html">Sacramento</a></td>
+                <td>Starbucks mug from the Been There series, made in ?.</td>
+            </tr>
+            <tr>
+                <td><a href="x.html"><img src="x.jpg" width="125" height="125"></a></td>
+                <td><a href="x.html">?</a></td>
+                <td>Starbucks mug from the ? series, made in ?.</td>
+            </tr>
+            <tr>
+                <td><a href="x.html"><img src="x.jpg" width="125" height="125"></a></td>
+                <td><a href="x.html">?</a></td>
+                <td>Starbucks mug from the ? series, made in ?.</td>
+            </tr>
         </tbody>
     </table>
-    {% else %}
-    <p>No items in the archive yet!</p>
-    {% endif %}
 </div>
 
-{% endblock %}
+</html>

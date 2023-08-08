@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css"/>
+    <title>
+        New Mexico
+    </title>
+</head>
+
+<div class="breadcrumb">
+    <a href="home.html"> Tiny Mug Library </a> / <a href= "index.html"> Archive </a>
+</div>
+
+<div class="page_title">
+    <h1>New Mexico - 2015 You Are Here Series</h1>
+</div>
+
+<div class="content">
+    <div class="image">
+        <div class = "gallery"></div>
+            <a href="/archive/photos/{{pic.id}}"> <img src="nmfront.jpg" width="300" height="300" alt="A white mug with a blue sketch of Boston Harbor on it that has Boston written at the bottom of it."> </a>
+            <a href="/archive/photos/{{pic.id}}"> <img src="nmback.jpg" width="300" height="300" alt="A white mug with [x]."> </a>
+        </div>
+    </div>
+
+    <div class="info">
+        <ul>
+            <li>Brand: Starbucks</li>
+            <li>Series: You Are Here Series</li>
+            <li>Material: Ceramic</li>
+            <li>Year Made: 2015</li>
+            <li>Description: <p>item description</p> </li>
+
+            <!--if a 3d model exists, insert an iframe to a url for it. This code assumes that the sketchfab embedding code will work. 
+            IF you would like it to be bigger or otherwise different in appearance, style the class sketchfab_embed_wrapper element
+            with CSS-->
+            {% if item.3dmodel %}
+            <div class="sketchfab-embed-wrapper">
+                <iframe title="Railroad Spike" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="{{item.3dmodel}}/embed">  </iframe> 
+                <p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;"> 
+                    <a href="{{item.3dmodel}}" target="_blank">{{item.name}} on Sketchfab</a>
+                </p>
+            </div>
+        </ul>
+    </div>
+
+    
+</div>
+
+</html>

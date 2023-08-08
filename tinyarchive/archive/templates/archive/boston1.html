@@ -1,26 +1,39 @@
-{% extends 'base.html' %}
-{% load static %}
-{% block content %}
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css"/>
+    <title>
+        Boston
+    </title>
+</head>
+
 <div class="breadcrumb">
-    <a href="/"> Tiny Library </a> / <a href= "/archive"> Archive </a>
+    <a href="home.html"> Tiny Mug Library </a> / <a href= "index.html"> Archive </a>
 </div>
+
 <div class="page_title">
-    {{item.name}}
+    <h1>Boston - 2006 Architecture Series</h1>
 </div>
+
 <div class="content">
     <div class="image">
-        {% if item.pictures %}
         <div class = "gallery"></div>
-        {% for pic in item.pictures %}
-            <a href="/archive/photos/{{pic.id}}"> <img src="{% get_media_prefix %}{{ pic.picture }}" alt="{{ item.name }}"> </a>
-        {% endfor %}
+            <a href="/archive/photos/{{pic.id}}"> <img src="bostonthumbnail.jpg" width="300" height="300" alt="A white mug with a blue sketch of Boston Harbor on it that has Boston written at the bottom of it."> </a>
+            <a href="/archive/photos/{{pic.id}}"> <img src="bostonback.jpg" width="300" height="300" alt="A white mug with [x]."> </a>
         </div>
-    {% endif %}
     </div>
+
     <div class="info">
         <ul>
-            <li>Material: {{item.material}}</li>
-            <li>Description: <p>{{item.description}}</p> </li>
+            <li>Brand: Starbucks</li>
+            <li>Series: Architecture Series</li>
+            <li>Material: Ceramic</li>
+            <li>Year Made: 2006</li>
+            <li>Description: <p>item description</p> </li>
+
             <!--if a 3d model exists, insert an iframe to a url for it. This code assumes that the sketchfab embedding code will work. 
             IF you would like it to be bigger or otherwise different in appearance, style the class sketchfab_embed_wrapper element
             with CSS-->
@@ -31,10 +44,10 @@
                     <a href="{{item.3dmodel}}" target="_blank">{{item.name}} on Sketchfab</a>
                 </p>
             </div>
-            {% endif %}
         </ul>
     </div>
 
     
 </div>
-{% endblock %}
+
+</html>
