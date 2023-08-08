@@ -14,7 +14,7 @@
     <a href="home.html">Home</a>
     <a class="active" href="../archive/index.html">Archive</a> 
     <a href="exhibit\index.html"> Exhibits </a>
-    <a About Us> </a> 
+    <a href="about_us.html">About Us </a> 
 </div>
 
 <div class="page_title">
@@ -38,16 +38,6 @@
             <li>Capacity: 14 fl. oz.</li>
             <li>Year Made: 2015</li>
             <li>Description: <p>A short white mug with a pueblo landscape wrapping around the sides. The design is made in orange, blue, and tan, depicting a pueblo with hot air balloons flying overhead. A bright orange sun floats over a blue roadrunner next to the building. The inside of the mug is blue.</p> </li>
-
-            <!--if a 3d model exists, insert an iframe to a url for it. This code assumes that the sketchfab embedding code will work. 
-            IF you would like it to be bigger or otherwise different in appearance, style the class sketchfab_embed_wrapper element
-            with CSS-->
-            {% if item.3dmodel %}
-            <div class="sketchfab-embed-wrapper">
-                <iframe title="Railroad Spike" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="{{item.3dmodel}}/embed">  </iframe> 
-                <p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;"> 
-                    <a href="{{item.3dmodel}}" target="_blank">{{item.name}} on Sketchfab</a>
-                </p>
             </div>
         </ul>
     </div>
