@@ -13,24 +13,11 @@ h3{
     margin-right: auto;
     margin-left: auto;
 }
-h4{
-  margin-top: 3em;
-  max-width: 50em;
-  margin-right: auto;
-  margin-left: auto;
-  color:rgb(38, 102, 19);
-  font-size: 30pt;
-  margin-left: 4em;
-  margin-bottom: 4em;
-}
-
 .head_italic{
     font-style: italic
 }
 th{
-    font-size: 20pt;
-    margin-top: 5em;
-    margin-bottom: 5em;
+    font-size: 25pt;
 }
 .tb{
     margin-top: 2em;
