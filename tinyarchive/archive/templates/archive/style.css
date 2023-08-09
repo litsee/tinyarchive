@@ -1,68 +1,155 @@
-h1{
-    color:rgb(38, 102, 19);
-    font-size: 45pt; 
+.heading {
+  text-align: right;
+  margin-right: 250px;
+  margin-bottom: 25px;
 }
 
-h2{
-    font-size: large;
-    color: black;
+h1 {
+  display: flex;
+  flex-direction: column;
+  font-size: 45px;
+  text-transform: uppercase;
+  font-family: 'Gambetta', serif;
+  letter-spacing: -3px;
+  transition: 700ms ease;
+  color: rgb(38, 102, 19);
+  text-align: center;
 }
-h3{
-    margin-top: 3em;
-    max-width: 50em;
-    margin-right: auto;
-    margin-left: auto;
+
+h1:hover {
+  font-variation-settings: "wght" 582; 
+  letter-spacing: 1px;
 }
-.head_italic{
-    font-style: italic
+
+h2 {
+  color: black;
+  font-size: x-large;
+  text-align: center;
 }
-th{
-    font-size: 25pt;
+
+h3 {
+  margin-top: 3em;
+  max-width: 50em;
+  margin-right: auto;
+  margin-left: auto;
+  font-size: xx-large;
 }
-.tb{
-    margin-top: 2em;
-    max-width: 50em;
-    margin-right: auto;
-    margin-left: auto;
-    font-size: large;
+
+h4 {
+  font-size: large;
+  font-style: normal;
+  margin-top: 20px;
 }
+
+p,
+dt {
+  font-size: large;
+}
+
+.head_italic {
+  font-style: italic;
+  font-size: x-large;
+  text-align: left;
+  margin-left: 450px;
+  margin-top: 25px;
+}
+
+td a {
+  justify-content: center;
+  display: flex;
+  cursor: pointer;
+  font-weight: 500;
+  transition: font-weight 20ms ease-in-out;
+  padding: 25px;
+}
+
+td a:hover {
+  font-weight: 900;
+}
+
+th,
+td,
+.tb {
+  font-size: large;
+  text-align: center;
+}
+
+th {
+  font-size: xx-large;
+  font-family: 'Futura';
+}
+
+.arch p, 
+td {
+  margin-inline: 25px;
+  font-size: 20px;
+}
+
+.tb {
+  max-width: 50em;
+  margin-right: auto;
+  margin-left: auto;
+  font-size: large;
+}
+
+.exhibit h4 {
+  font-size: x-large;
+  margin: 20px;
+}
+
+.exhibit_items {
+  text-align: center;
+  padding-inline: 250px;
+  margin-inline: 100px;
+}
+
+.bio {
+  padding-inline: 250px;
+  margin-inline: 250px;
+  line-height: 225%;
+}
+
+.content {
+  padding-inline: 200px;
+}
+
 .topnav {
-    background-color: #333;
-    overflow: hidden;
-  }
-  
-  /* Style the links inside the navigation bar */
-  .topnav a {
-    float: left;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-  }
-  
-  /* Change the color of links on hover */
-  .topnav a:hover {
-    background-color: #ddd;
-    color: black;
-  }
-  
-  /* Add a color to the active/current link */
-  .topnav a.active {
-    background-color: #04AA6D;
-    color: white;
-  }
+  background-color: #333;
+  overflow: hidden;
+}
 
-  .center{
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 2em;
-    margin-bottom: 0em;
-    clear: both;
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 40px;
-    margin-inline-end: 40px;
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: rgb(38, 102, 19);
+  color: #f2f2f2;
+}
+
+.center{
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2em;
+  margin-bottom: 0em;
+  clear: both;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 40px;
+  margin-inline-end: 40px;
 }
