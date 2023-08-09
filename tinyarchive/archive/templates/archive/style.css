@@ -1,24 +1,14 @@
 .heading {
   text-align: right;
-  margin-right: 250px;
+  margin-right: 350px;
   margin-bottom: 25px;
 }
 
 h1 {
-  display: flex;
-  flex-direction: column;
-  font-size: 45px;
+  font-size: 50px;
   text-transform: uppercase;
-  font-family: 'Gambetta', serif;
-  letter-spacing: -3px;
-  transition: 700ms ease;
   color: rgb(38, 102, 19);
   text-align: center;
-}
-
-h1:hover {
-  font-variation-settings: "wght" 582; 
-  letter-spacing: 1px;
 }
 
 h2 {
@@ -54,6 +44,21 @@ dt {
   margin-top: 25px;
 }
 
+a,
+.arch a {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Gambetta', serif;
+  letter-spacing: -1px;
+  transition: 500ms ease;
+  text-align: center;
+}
+
+a:hover {
+  font-variation-settings: "wght" 500; 
+  letter-spacing: 1px;
+}
+
 td a {
   justify-content: center;
   display: flex;
@@ -67,22 +72,19 @@ td a:hover {
   font-weight: 900;
 }
 
-th,
 td,
 .tb {
   font-size: large;
   text-align: center;
 }
 
-th {
-  font-size: xx-large;
-  font-family: 'Futura';
-}
-
 .arch p, 
 td {
-  margin-inline: 25px;
   font-size: 20px;
+}
+
+.arch th {
+  font-size: xx-large;
 }
 
 .tb {
@@ -97,20 +99,39 @@ td {
   margin: 20px;
 }
 
+.exhibit_items img {
+  padding-inline: 240px;
+  margin-bottom: 20px;
+}
+
 .exhibit_items {
   text-align: center;
   padding-inline: 250px;
   margin-inline: 100px;
 }
 
-.bio {
-  padding-inline: 250px;
-  margin-inline: 250px;
-  line-height: 225%;
+.bio td {
+  padding-inline: 550px;
+  margin-inline: 300px;
+  line-height: 200%;
+}
+
+.bio th {
+  font-size: x-large;
+  font-family: 'Cambria';
+  padding-top: 20px;
 }
 
 .content {
   padding-inline: 200px;
+  font-size: large;
+}
+
+.info, 
+.image {
+  font-size: large;
+  text-align: center;
+  margin-inline: 440px;
 }
 
 .topnav {
@@ -126,6 +147,7 @@ td {
   padding: 14px 16px;
   text-decoration: none;
   font-size: 18px;
+  font-family: 'Georgia';
 }
 
 /* Change the color of links on hover */
