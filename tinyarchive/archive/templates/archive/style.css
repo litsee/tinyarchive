@@ -1,11 +1,12 @@
 h1{
-    color:rgb(38, 102, 19);
+    color:rgb(19, 69, 4);
     font-size: 45pt; 
 }
-
 h2{
     font-size: large;
     color: black;
+    margin-bottom: 1em;
+    margin-top: 2em;
 }
 h3{
     margin-top: 3em;
@@ -14,23 +15,32 @@ h3{
     margin-left: auto;
 }
 h4{
-  margin-top: 3em;
+  margin-top: 2em;
   max-width: 50em;
   margin-right: auto;
   margin-left: auto;
   color:rgb(38, 102, 19);
   font-size: 30pt;
-  margin-left: 4em;
-  margin-bottom: 4em;
+  margin-left: 2.5em;
+  margin-bottom: 2.5em;
 }
-
+body{
+    background-image: url("background.jpg");
+    background-position: center;
+    background-size: cover;
+}
+p{
+  margin-left: 5em;
+  margin-right: 5em;
+}
 .head_italic{
     font-style: italic
 }
 th{
-    font-size: 20pt;
+    font-size: 24pt;
     margin-top: 5em;
-    margin-bottom: 5em;
+    margin-bottom: 10em;
+    margin-left: 10em;
 }
 .tb{
     margin-top: 2em;
@@ -39,6 +49,15 @@ th{
     margin-left: auto;
     font-size: large;
 }
+.td{
+  margin-top: 2em;
+  max-width: 40em;
+  margin-right: 3em;
+  margin-left: 3em;
+  font-size: large;
+  font-size: 20px;
+}
+
 .topnav {
     background-color: #333;
     overflow: hidden;
